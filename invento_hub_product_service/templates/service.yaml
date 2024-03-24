@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: invento-hub-product-service
+  name: product-service
 spec:
   selector:
-    app: invento-hub-product-service
+    app: product-service
   ports:
     - protocol: TCP
       port: 80

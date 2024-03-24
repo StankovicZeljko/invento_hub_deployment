@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: invento-hub-product-service
+  name: product-service
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: invento-hub-product-service
+      app: product-service
   template:
     metadata:
       labels:
-        app: invento-hub-product-service
+        app: product-service
     spec:
       containers:
-      - name: invento-hub-product-service
+      - name: product-service
         image: codingwulf/invento-hub-product-service:latest
         ports:
         - containerPort: 8080

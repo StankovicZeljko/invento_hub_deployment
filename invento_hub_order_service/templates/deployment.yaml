@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: invento-hub-order-service
+  name: order-service
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: invento-hub-order-service
+      app: order-service
   template:
     metadata:
       labels:
-        app: invento-hub-order-service
+        app: order-service
     spec:
       containers:
-      - name: invento-hub-order-service
+      - name: order-service
         image: codingwulf/invento-hub-order-service:latest
         ports:
         - containerPort: 8080
