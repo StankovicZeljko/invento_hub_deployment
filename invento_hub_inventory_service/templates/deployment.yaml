@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: invento-hub-inventory-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: invento-hub-inventory-service
+  template:
+    metadata:
+      labels:
+        app: invento-hub-inventory-service
+    spec:
+      containers:
+      - name: invento-hub-inventory-service
+        image: codingwulf/invento-hub-inventory-service:latest
+        ports:
+        - containerPort: 8080

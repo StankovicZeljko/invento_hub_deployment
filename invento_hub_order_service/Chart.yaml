@@ -1,0 +1,6 @@
+apiVersion: v2
+name: invento-hub-order-service
+description: A Helm chart for the Invento Hub order Service
+type: application
+version: 1.0.0
+appVersion: 1.0.0
